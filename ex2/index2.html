@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Background Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+            background-size: 400% 400%;
+            animation: gradient 12s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px 50px;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .glass-card h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ff758c, #ff7eb3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #243c56;
+        }
+
+        @media (max-width: 768px) {
+            .glass-card {
+                padding: 30px 20px;
+                max-width: 90%;
+            }
+
+            .glass-card h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1>Beautiful Background</h1>
+        <p>
+            This modern UI uses <strong>animated gradients</strong> and <strong>glassmorphism</strong> with <code>backdrop-filter</code>.
+            The background smoothly changes colors, creating a visually appealing experience.
+        </p>
+
+        <p>
+            Use this design pattern to create elegant landing pages, headers, or hero sections in web projects.
+        </p>
+    </div>
+
+</body>
+</html>

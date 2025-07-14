@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Styling Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f0f4f8;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px 50px;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            background: linear-gradient(90deg, #4e73df, #6f42c1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #ff6b6b;
+            font-weight: 600;
+            background: #fff0f0;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        .quote {
+            font-size: 1.3rem;
+            color: #222;
+            font-style: italic;
+            text-align: center;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Creative Text Styling</h1>
+
+        <p>
+            Typography is the heart of web design. By using <span class="highlight">CSS Font and Text Properties</span>,
+            you can transform plain text into a visually engaging message. 
+            Text shadows, gradients, spacing, and alignment help in creating modern, aesthetic web layouts.
+        </p>
+
+        <p>
+            Choosing the right combination of <span class="highlight">font-family</span> and colors 
+            makes your design look professional and appealing.
+            Use <span class="highlight">Google Fonts</span> for clean and scalable typography.
+        </p>
+
+        <p class="quote">
+            "Design is not just what it looks like and feels like. Design is how it works." – Steve Jobs
+        </p>
+    </div>
+
+</body>
+</html>
